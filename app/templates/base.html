@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<title>{% block title %} {% endblock %} - Portafolio</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<body>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+</body>
