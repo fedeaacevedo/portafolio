@@ -5,5 +5,19 @@ Bievenido
 {% endblock %}
 
 {% block content %}
-Este es el contenido de mi sitio web 
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>Desarrollador</h1>
+            <h1>Federico Acevedo</h1>
+            <p>Contruyo aplicaciones dinamicas usando Python y bases de datos relacionales y no relacionales</p>
+            <a href="#contacto" class="btn">Contactame</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='big-data.png') }}" width="600" />
+        </div>
+    </div>
+
+</div>
+{% include 'portfolio/section-first.html' %}
 {% endblock %}
