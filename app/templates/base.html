@@ -7,6 +7,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+
 
 <body>
     <header>
@@ -14,7 +22,7 @@
         <nav>
             <ul>
                 <li><a href='{{url_for('portfolio.index')}}'>Inicio</a></li>
-                <li><a href="portfolio/proyectos.html">Proyectos</a></li>
+                <li><a href="{{url_for('portfolio.proyectos')}}">Proyectos</a></li>
                 <li><a href='#contacto'>Contacto</a></li>
             </ul>
         </nav>        
